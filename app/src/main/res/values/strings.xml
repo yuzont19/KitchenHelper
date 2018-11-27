@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Kitchen Helper</string>
+    <string name="image">Kitchen Helper Logo goes here</string>
+    <string name="search">Search Recipes</string>
+    <string name="favorites">Favorite Recipes</string>
+    <string name="shop_list">Shopping List</string>
+    <string name="measure">Measurement Converter</string>
 </resources>
