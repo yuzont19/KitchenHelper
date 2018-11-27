@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/search" />
+        android:text="@string/search"
+        android:onClick="onRecipeClick"/>
 
     <!--Button for the favorites section-->
     <Button
@@ -31,7 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/favorites"/>
+        android:text="@string/favorites"
+        android:onClick="onFavoriteClick"/>
 
     <!--Button for shopping list-->
     <Button
@@ -40,7 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/shop_list" />
+        android:text="@string/shop_list"
+        android:onClick="onShopClick"/>
 
     <!--Button for measurement converter-->
     <Button
@@ -49,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="@string/measure"/>
+        android:text="@string/measure"
+        android:onClick="onMeasureClick"/>
 
 </LinearLayout>
