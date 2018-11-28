@@ -3,6 +3,7 @@ package edu.hanover.kitchenhelper;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.content.Intent;
 
 public class MainActivity extends Activity {
 
@@ -14,21 +15,21 @@ public class MainActivity extends Activity {
 
     //Called when the search recipe button is clicked
     public void onRecipeClick(View view) {
-        // Do something in response to button click
+        startActivity(new Intent(MainActivity.this, SearchRecipe.class));
     }
 
     //Called when the favorite recipe button is clicked
     public void onFavoriteClick(View view) {
-        // Do something in response to button click
+        startActivity(new Intent(MainActivity.this, FavoriteRecipes.class));
     }
 
     //Called when the shopping list button is clicked
     public void onShopClick(View view) {
-        // Do something in response to button click
+        startActivity(new Intent(MainActivity.this, ShoppingList.class));
     }
 
     //Called when the measurement converter button is clicked
     public void onMeasureClick(View view) {
-        // Do something in response to button click
+        startActivity(new Intent(MainActivity.this, MeasurementConverter.class));
     }
 }
