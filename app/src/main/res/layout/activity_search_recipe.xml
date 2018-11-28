@@ -6,5 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SearchRecipe">
 
+    <!--THIS IS THE RECIPE SEARCH-->
 
 </android.support.constraint.ConstraintLayout>
