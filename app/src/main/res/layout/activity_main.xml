@@ -8,6 +8,7 @@
 
     <!--Will not be a textview but rather a logo that I will make later-->
     <TextView
+        android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/image"
