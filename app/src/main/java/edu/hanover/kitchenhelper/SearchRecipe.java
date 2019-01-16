@@ -10,4 +10,6 @@ public class SearchRecipe extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_recipe);
     }
+
+
 }

@@ -6,4 +6,7 @@
     <string name="shop_list">Shopping List</string>
     <string name="measure">Measurement Converter</string>
     <string name="enter">IDK WHAT THIS SHOULD BE</string>
+    <string name="search_button">Search</string>
+    <string name="first_ing">First Ingredient</string>
+    <string name="second_ing">Second Ingredient</string>
 </resources>
