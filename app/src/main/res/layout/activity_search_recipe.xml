@@ -18,6 +18,7 @@
         android:fontFamily="sans-serif-condensed"
         android:textAlignment="center" />
 
+    <!--Where the user can input the first ingredient-->
     <EditText
         android:id="@+id/first_ing"
         android:layout_width="wrap_content"
@@ -25,6 +26,7 @@
         android:ems="20"
         android:inputType="text" />
 
+    <!--Where the user can input the second ingredient-->
     <EditText
         android:id="@+id/second_ing"
         android:layout_width="wrap_content"
@@ -32,10 +34,17 @@
         android:ems="20"
         android:inputType="text"/>
 
+    <!--The actual search button-->
     <Button
         android:id="@+id/enter_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/search_button"/>
+        android:text="@string/search_button" />
+        <!--android:onClick="onSearchClick"/>-->
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

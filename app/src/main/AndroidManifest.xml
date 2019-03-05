@@ -19,7 +19,8 @@
         <activity android:name=".SearchRecipe" />
         <activity android:name=".FavoriteRecipes" />
         <activity android:name=".ShoppingList" />
-        <activity android:name=".MeasurementConverter"></activity>
+        <activity android:name=".MeasurementConverter" />
+
     </application>
 
 </manifest>

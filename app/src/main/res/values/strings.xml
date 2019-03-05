@@ -9,4 +9,5 @@
     <string name="search_button">Search</string>
     <string name="first_ing">First Ingredient</string>
     <string name="second_ing">Second Ingredient</string>
+    <string name="API">http://www.recipepuppy.com/api/?i=</string>
 </resources>
