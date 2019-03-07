@@ -23,7 +23,7 @@ public class RecipeClass {
     public static void addRecipe() {
         return;
     }
-    
+
     //deleteRecipe function to delete recipe from favorites screen
     public static void deleteRecipe() {
         return;
