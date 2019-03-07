@@ -1,0 +1,15 @@
+package edu.hanover.kitchenhelper;
+
+public class ShoppingListClass {
+    //data members
+    private String name;
+    private String quantity;
+    private boolean bought;
+
+    //constructor
+    public ShoppingListClass(String ingredient, String num_items, boolean acquired) {
+        name = ingredient;
+        quantity = num_items;
+        bought = acquired;
+    }
+}
