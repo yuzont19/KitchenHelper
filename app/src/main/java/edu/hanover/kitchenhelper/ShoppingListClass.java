@@ -12,4 +12,14 @@ public class ShoppingListClass {
         quantity = num_items;
         bought = acquired;
     }
+
+    //addIngredient function that adds ingredient to shopping list
+    public static String addIngredient() {
+        return "this is not implemented";
+    }
+
+    //deleteIngredient function that deletes ingredient on shopping list
+    public static String deleteIngredient() {
+        return "this is not implemented";
+    }
 }
