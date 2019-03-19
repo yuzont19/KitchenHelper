@@ -1,14 +1,12 @@
 package edu.hanover.kitchenhelper;
 
-import java.util.ArrayList;
-
-public class MeasurementClass {
+public class Measurement {
     //data members
-    private ArrayList<String> name;
-    private String quantity;
+    private String name;
+    private Integer quantity;
 
     //constructor
-    public MeasurementClass(ArrayList<String> measurements, String numMeasure) {
+    public Measurement(String measurements, Integer numMeasure) {
         name = measurements;
         quantity = numMeasure;
     }

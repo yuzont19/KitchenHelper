@@ -11,13 +11,12 @@ public final class Query {
         ingredients = A;
     }
 
-    public static String getQueryString(ArrayList<String> A) {
-        String first_ing = A.get(0);
-        String second_ing = A.get(1);
+    public String getQueryString() {
+        String first_ing = ingredients.get(0);
+        String second_ing = ingredients.get(1);
         String result_str = first_ing + "," + second_ing;
         String result = "http://www.recipepuppy.com/api/?i=" + result_str;
 
         return result;
-
     }
 }

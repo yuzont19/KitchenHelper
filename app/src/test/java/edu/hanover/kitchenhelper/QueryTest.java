@@ -10,6 +10,7 @@ public class QueryTest {
         ArrayList<String> ingredients = new ArrayList<>();
         ingredients.add("banana");
         ingredients.add("apple");
-        assert(Query.getQueryString(ingredients).equals("http://www.recipepuppy.com/api/?i=banana,apple"));
+        Query two_ing = new Query(ingredients);
+        assert(two_ing.getQueryString().equals("http://www.recipepuppy.com/api/?i=banana,apple"));
     }
 }
