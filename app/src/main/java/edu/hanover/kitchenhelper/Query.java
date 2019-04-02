@@ -16,7 +16,6 @@ public final class Query {
         String second_ing = ingredients.get(1);
         String result_str = first_ing + "," + second_ing;
         String result = "http://www.recipepuppy.com/api/?i=" + result_str;
-
         return result;
     }
 }

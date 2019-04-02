@@ -13,12 +13,11 @@ public class ShoppingListClass {
         bought = acquired;
     }
 
-    //addIngredient function that adds ingredient to shopping list
-    public static String addIngredient() {
-        return "this is not implemented";
+    //TODO addIngredient function that adds ingredient to shopping list
+    public static String addIngredient() { return "this is not implemented";
     }
 
-    //deleteIngredient function that deletes ingredient on shopping list
+    //TODO deleteIngredient function that deletes ingredient on shopping list
     public static String deleteIngredient() {
         return "this is not implemented";
     }

@@ -39,9 +39,10 @@
         android:id="@+id/enter_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/search_button" />
-        <!--android:onClick="onSearchClick"/>-->
+        android:text="@string/search_button"
+        android:onClick="onSearchClick" />
 
+    <!--Shows the result of getQueryString()-->
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"

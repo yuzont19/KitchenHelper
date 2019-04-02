@@ -36,12 +36,10 @@ public class Recipe {
     public String getPicture() { return this.picture; }
 
 
-    //addRecipe function to add recipe to database
-    public static void addRecipe() {
-        return;
-    }
+    //TODO addRecipe function to add recipe to database
+    public static void addRecipe() { return; }
 
-    //deleteRecipe function to delete recipe from database
+    //TODO deleteRecipe function to delete recipe from database
     public static void deleteRecipe() {
         return;
     }
@@ -50,6 +48,7 @@ public class Recipe {
     static class ConversionTable {
         List<Pair<String, Measurement>> table = new ArrayList<>();
 
+        //TODO finish the rest of this table
         ConversionTable() {
             //populate the table
             addConversion("tsp", new Measurement("mL", 5));
