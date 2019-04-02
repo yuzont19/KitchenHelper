@@ -10,11 +10,11 @@ public class IngredientsDatabase extends SQLiteOpenHelper {
     //information of database
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "shoppingListDB.db";
-    public static final String TABLE_NAME = "ShoppingList";
-    public static final String INGREDIENT_ID = "IngredientID";
-    public static final String INGREDIENT_NAME = "IngredientName";
-    public static final String QUANTITY = "Quantity";
-    public static final String BOUGHT = "Bought";
+    private static final String TABLE_NAME = "ShoppingList";
+    private static final String INGREDIENT_ID = "IngredientID";
+    private static final String INGREDIENT_NAME = "IngredientName";
+    private static final String QUANTITY = "Quantity";
+    private static final String BOUGHT = "Bought";
 
     //initialize the database
     public IngredientsDatabase(Context context) {
@@ -53,7 +53,7 @@ public class IngredientsDatabase extends SQLiteOpenHelper {
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
-    
+
     public Ingredients findIngredient(Ingredients ingredientName) {
         String query = "Select * FROM " + TABLE_NAME + "WHERE" + INGREDIENT_NAME + " = " + "'" + ingredientName + "'";
         SQLiteDatabase db = this.getWritableDatabase();
