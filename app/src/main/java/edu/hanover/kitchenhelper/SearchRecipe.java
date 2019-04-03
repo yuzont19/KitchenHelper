@@ -16,6 +16,8 @@ public class SearchRecipe extends Activity {
         setContentView(layout.activity_search_recipe);
     }
 
+    //When search is clicked, the two ingredients are grabbed from the text boxes
+    //and are then added to the query link
     public void onSearchClick(View view) {
         ArrayList<String> ingredients = new ArrayList<>();
         EditText first = (EditText) findViewById(id.first_ing);
