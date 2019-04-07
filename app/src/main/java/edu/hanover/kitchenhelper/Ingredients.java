@@ -17,40 +17,30 @@ public class Ingredients {
         ingredientID = id;
     }
 
-    //properties
+    //setters and getters
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public Integer getQuantity() {
         return quantity;
     }
-
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
-
     public Integer getID() {
         return this.ingredientID;
     }
-
-    public void setID(Integer ingredientID) {
-        this.ingredientID = ingredientID;
-    }
-
+    public void setID(Integer ingredientID) { this.ingredientID = ingredientID; }
     public boolean isBought() {
         return bought;
     }
 
     //Class methods
     //TODO addIngredient function that adds ingredient to shopping list database
-    public static String addIngredient() {
-        return "this is not implemented";
-    }
+    public static String addIngredient() { return "6this is not implemented"; }
 
     //TODO deleteIngredient function that deletes ingredient on shopping list database
     public static String deleteIngredient() {

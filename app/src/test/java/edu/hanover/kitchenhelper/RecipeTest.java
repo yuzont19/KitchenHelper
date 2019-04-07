@@ -1,6 +1,7 @@
 package edu.hanover.kitchenhelper;
 
 import org.junit.Test;
+import android.util.Pair;
 
 public class RecipeTest {
     @Test

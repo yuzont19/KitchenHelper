@@ -5,6 +5,8 @@ import android.util.Pair;
 import java.util.ArrayList;
 import java.util.List;
 
+import static edu.hanover.kitchenhelper.Ingredients.addIngredient;
+
 public class Recipe {
     //data members
     private String recipeName;
@@ -24,15 +26,11 @@ public class Recipe {
         picture = pic;
     }
 
-    //get recipeName
+    //getters and setters
     public String getRecipeName(){ return this.recipeName; }
-    //get timeLimit
     public String getTime() { return this.timeLimit; }
-    //get ingredients list
     public ArrayList<String> getIngredient() { return this.ingredients; }
-    //get directions
     public ArrayList<String> getDirections() { return this.directions; }
-    //get picture if applicable
     public String getPicture() { return this.picture; }
 
 
@@ -53,9 +51,17 @@ public class Recipe {
             //populate the table
             addConversion("tsp", new Measurement("mL", 5));
 
-            addConversion("T", new Measurement("mL", 15));
+            addConversion("tbsp", new Measurement("mL", 15));
 
             addConversion("fl oz", new Measurement("mL", 30));
+
+            addConversion("cup", new Measurement("mL", 240));
+
+            addConversion("pint", new Measurement("mL", 475));
+
+            addConversion("quart", new Measurement("mL", 950));
+
+            addConversion("gal", new Measurement("mL", 3800));
         }
 
         void addConversion(String imperial, Measurement measurement) {

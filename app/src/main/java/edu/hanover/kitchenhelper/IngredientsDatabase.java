@@ -23,7 +23,7 @@ public class IngredientsDatabase extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_TABLE = "CREATE TABLE" + TABLE_NAME + "(" + INGREDIENT_ID +
-                "INTEGER PRIMARYKEY," + INGREDIENT_NAME + "TEXT " + QUANTITY + "TEXT," + BOUGHT + "TEXT )";
+                "INTEGER PRIMARYKEY," + INGREDIENT_NAME + " TEXT " + QUANTITY + " TEXT," + BOUGHT + " TEXT )";
         db.execSQL(CREATE_TABLE);
     }
     @Override
@@ -43,7 +43,7 @@ public class IngredientsDatabase extends SQLiteOpenHelper {
         db.close();
         return result;
     }
-    public void addIngredient(Ingredients ingredient) {
+    public void addIngredients(Ingredients ingredient) {
         ContentValues values = new ContentValues();
         values.put(INGREDIENT_ID, ingredient.getID());
         values.put(INGREDIENT_NAME, ingredient.getName());

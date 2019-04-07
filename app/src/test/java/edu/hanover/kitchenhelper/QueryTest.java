@@ -13,4 +13,5 @@ public class QueryTest {
         Query two_ing = new Query(ingredients);
         assert(two_ing.getQueryString().equals("http://www.recipepuppy.com/api/?i=banana,apple"));
     }
+
 }
