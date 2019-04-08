@@ -54,4 +54,11 @@
         android:text="@string/addIngredient"
         android:onClick="onClickAddIngredient" />
 
+    <Button
+        android:id="@+id/loadDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/load_database"
+        android:onClick="onClickLoadDatabase" />
+
 </LinearLayout>
