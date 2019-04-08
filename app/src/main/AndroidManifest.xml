@@ -20,7 +20,7 @@
         <activity android:name=".FavoriteRecipes" />
         <activity android:name=".ShoppingList" />
         <activity android:name=".MeasurementConverter" />
-
+        <activity android:name=".Info"></activity>
     </application>
 
 </manifest>

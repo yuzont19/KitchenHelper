@@ -58,4 +58,14 @@
         android:text="@string/measure"
         android:onClick="onMeasureClick"/>
 
+    <!--Button for info regarding app-->
+    <Button
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/info"
+        android:onClick="onInfoClick" />
+
 </LinearLayout>

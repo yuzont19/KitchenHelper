@@ -32,4 +32,8 @@ public class MainActivity extends Activity {
     public void onMeasureClick(View view) {
         startActivity(new Intent(MainActivity.this, MeasurementConverter.class));
     }
+
+    public void onInfoClick(View view) {
+        startActivity(new Intent(MainActivity.this, Info.class));
+    }
 }
