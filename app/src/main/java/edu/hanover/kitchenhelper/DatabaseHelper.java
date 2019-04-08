@@ -30,6 +30,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {}
 
+    //loads the database table and returns the results
     public String loadHandler() {
         String result = "";
         String query = "Select*FROM " + TABLE_NAME;
@@ -46,6 +47,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return result;
     }
 
+    //adds ingredients to the database using ingredient class
     public void addIngredients(Ingredients ingredient) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -57,6 +59,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    //finds a certain ingredient in the database table and returns what matches
     public Ingredients findIngredient(Ingredients ingredientName) {
         String query = "Select * FROM " + TABLE_NAME + "WHERE" + INGREDIENT_NAME + " = " + "'" + ingredientName + "'";
         SQLiteDatabase db = this.getWritableDatabase();
@@ -73,6 +76,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
         return ingredient;
     }
+
+    //deletes the ingredient listed and removes from database
     public boolean deleteIngredient(int ID) {
         boolean result = false;
         String query = "Select*FROM" + TABLE_NAME + "WHERE" + INGREDIENT_ID + "= '" + String.valueOf(ID) + "'";
@@ -91,6 +96,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
         return result;
     }
+
+    //updates the id and name of ingredients in database table
     public boolean updateIngredient(int ID, String name) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues args = new ContentValues();

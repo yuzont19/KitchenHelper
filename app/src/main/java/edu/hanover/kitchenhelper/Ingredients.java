@@ -39,12 +39,12 @@ public class Ingredients {
     }
 
     //Class methods
-    //TODO addIngredient function that adds ingredient to shopping list database
-    public static String addIngredient() { return "6this is not implemented"; }
+    //addIngredient function that adds ingredient to shopping list database
+    //this is done in the shopping list class instead using the database
+    public static String addIngredient() { return "this is not implemented"; }
 
-    //TODO deleteIngredient function that deletes ingredient on shopping list database
-    public static String deleteIngredient() {
-        return "this is not implemented";
-    }
+    //deleteIngredient function that deletes ingredient on shopping list database
+    //this is done in the shopping list class instead using the database
+    public static String deleteIngredient() { return "this is not implemented"; }
 
 }

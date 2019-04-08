@@ -1,9 +1,7 @@
 package edu.hanover.kitchenhelper;
 
 import android.app.Activity;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.EditText;
 
@@ -15,6 +13,7 @@ public class ShoppingList extends Activity {
         setContentView(R.layout.activity_shopping_list);
     }
 
+    //grabs the two texts for name and quantity and uses that to add ingredients to the database
     public void onClickAddIngredient(View view) {
         DatabaseHelper dbHandler = new DatabaseHelper(this);
         EditText name = (EditText) findViewById(R.id.ingredient);
@@ -25,6 +24,7 @@ public class ShoppingList extends Activity {
         dbHandler.addIngredients(ingredient);
     }
 
+    //loads the database table to see if ingredients are added
     public void onClickLoadDatabase(View view) {
         DatabaseHelper dbHandler = new DatabaseHelper(this);
         dbHandler.loadHandler();
