@@ -18,6 +18,12 @@
         android:fontFamily="sans-serif-condensed"
         android:textAlignment="center" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_ingredient"
+        android:textAlignment="center" />
+
     <!--Where the user can input the first ingredient-->
     <EditText
         android:id="@+id/first_ing"
@@ -25,6 +31,12 @@
         android:layout_height="wrap_content"
         android:ems="20"
         android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/second_ingredient"
+        android:textAlignment="center" />
 
     <!--Where the user can input the second ingredient-->
     <EditText
