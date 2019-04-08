@@ -13,4 +13,6 @@
     <string name="ingredient">Ingredient:</string>
     <string name="quantity">quantity</string>
     <string name="addIngredient">Add Ingredient</string>
+    <string name="load_database">Load Database</string>
+    <string name="kitchen_helper">Kitchen Helper</string>
 </resources>
