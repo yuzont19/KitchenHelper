@@ -26,4 +26,9 @@
     <string name="InfoDetails">Welcome to Kitchen Helper! \n With Kitchen Helper, you are able to search for recipes based on a two ingredient query using the search recipe button. \n You are also able to add your own recipes and favorite recipes from your query through the favorite recipe tab. \n Through the shopping list button, the user is able to add ingredients for a recipe. \n The measurement converter allows user to convert ingredients from imperial units to metric and the other way around. </string>
     <string name="first_ingredient">First Ingredient</string>
     <string name="second_ingredient">Second Ingredient</string>
+    <string name="measurement">Measurement</string>
+    <string name="number_to_convert">Number to convert</string>
+    <string name="to">to</string>
+    <string name="whatUnit">what unit?</string>
+    <string name="convert">Convert</string>
 </resources>
