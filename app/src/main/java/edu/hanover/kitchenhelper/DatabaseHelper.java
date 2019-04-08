@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 
-public class IngredientsDatabase extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
     //information of database
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "shoppingListDB.db";
@@ -17,20 +17,22 @@ public class IngredientsDatabase extends SQLiteOpenHelper {
     private static final String BOUGHT = "Bought";
 
     //initialize the database
-    public IngredientsDatabase(Context context) {
+    DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_TABLE = "CREATE TABLE" + TABLE_NAME + "(" + INGREDIENT_ID +
-                "INTEGER PRIMARYKEY," + INGREDIENT_NAME + " TEXT " + QUANTITY + " TEXT," + BOUGHT + " TEXT )";
+        String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + " (" + INGREDIENT_ID +
+                " INTEGER PRIMARY KEY AUTOINCREMENT, " + INGREDIENT_NAME + " TEXT, " + QUANTITY + " TEXT, " + BOUGHT + " TEXT);";
         db.execSQL(CREATE_TABLE);
     }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {}
+
     public String loadHandler() {
         String result = "";
-        String query = "Select*FROM" + TABLE_NAME;
+        String query = "Select*FROM " + TABLE_NAME;
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
         while (cursor.moveToNext()) {
@@ -43,13 +45,14 @@ public class IngredientsDatabase extends SQLiteOpenHelper {
         db.close();
         return result;
     }
+
     public void addIngredients(Ingredients ingredient) {
+        SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(INGREDIENT_ID, ingredient.getID());
+        values.put(INGREDIENT_ID, 1);
         values.put(INGREDIENT_NAME, ingredient.getName());
         values.put(QUANTITY, ingredient.getQuantity());
         values.put(BOUGHT, ingredient.isBought());
-        SQLiteDatabase db = this.getWritableDatabase();
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
@@ -71,7 +74,6 @@ public class IngredientsDatabase extends SQLiteOpenHelper {
         return ingredient;
     }
     public boolean deleteIngredient(int ID) {
-
         boolean result = false;
         String query = "Select*FROM" + TABLE_NAME + "WHERE" + INGREDIENT_ID + "= '" + String.valueOf(ID) + "'";
         SQLiteDatabase db = this.getWritableDatabase();
