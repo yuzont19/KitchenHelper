@@ -15,4 +15,10 @@
     <string name="addIngredient">Add Ingredient</string>
     <string name="load_database">Load Database</string>
     <string name="kitchen_helper">Kitchen Helper</string>
+    <string name="favorite_recipes">Favorite Recipes</string>
+    <string name="add_recipe">Add Recipe</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="time_limit">Time Limit</string>
+    <string name="directions">Directions</string>
+    <string name="ingredients">Ingredients</string>
 </resources>
