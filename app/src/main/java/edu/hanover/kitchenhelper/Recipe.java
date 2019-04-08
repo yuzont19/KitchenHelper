@@ -11,14 +11,14 @@ public class Recipe {
     //data members
     private String recipeName;
     private String timeLimit;
-    private ArrayList<String> ingredients;
-    private ArrayList<String> directions;
+    private String ingredients;
+    private String directions;
     private String picture;
     private ArrayList<Recipe> recipeTable;
     private static ConversionTable conversionTable = new ConversionTable();
 
     //constructor
-    public Recipe (String name, String time, ArrayList<String> ing, ArrayList<String> instructions, String pic) {
+    public Recipe (String name, String time, String ing, String instructions, String pic) {
         recipeName = name;
         timeLimit = time;
         ingredients = ing;
@@ -29,8 +29,8 @@ public class Recipe {
     //getters and setters
     public String getRecipeName(){ return this.recipeName; }
     public String getTime() { return this.timeLimit; }
-    public ArrayList<String> getIngredient() { return this.ingredients; }
-    public ArrayList<String> getDirections() { return this.directions; }
+    public String getIngredient() { return this.ingredients; }
+    public String getDirections() { return this.directions; }
     public String getPicture() { return this.picture; }
 
 

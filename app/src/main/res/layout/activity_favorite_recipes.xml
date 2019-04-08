@@ -71,7 +71,13 @@
         android:id="@+id/addRecipe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/add_recipe" />
+        android:text="@string/add_recipe"
+        android:onClick="onClickAddRecipe" />
+
+    <TextView
+        android:id="@+id/resultRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
